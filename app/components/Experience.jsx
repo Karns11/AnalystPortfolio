@@ -8,7 +8,7 @@ const Experience = ({darkMode}) => {
           Experience
         </p>
         <h2 className={darkMode ? "py-4 text-[#fff]" : "py-4"}>
-          What I've Done
+          Where I've Been
         </h2>
         <div className={darkMode ? "grid md:grid-cols-2 gap-8 text-[#fff] pt-8" : "grid md:grid-cols-2 gap-8 pt-8"}>
             <div className='flex flex-col justify-center'>
