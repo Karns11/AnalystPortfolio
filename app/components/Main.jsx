@@ -13,7 +13,7 @@ const Main = ({ darkMode }) => {
       const currentIndex = words.indexOf(currentWord);
       const nextIndex = (currentIndex + 1) % words.length;
       setCurrentWord(words[nextIndex]);
-    }, 3500); 
+    }, 3000); 
 
     return () => {
       clearInterval(interval);
