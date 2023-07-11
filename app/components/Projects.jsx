@@ -1,6 +1,8 @@
 import React from "react";
 import nbapredictor from "@public/assets/projects/NBAPredictor.png";
 import nbaImg from "@public/assets/projects/nbamarkup.png";
+import ERViz from "@public/assets/projects/ERViz.png";
+import SoccerViz from "@public/assets/projects/SoccerViz.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = ({ darkMode }) => {
@@ -26,7 +28,21 @@ const Projects = ({ darkMode }) => {
             title="NBA GAME PREDICTOR"
             backgroundImage={nbapredictor}
             projectUrl="/nbapredictor"
-            stack="python"
+            stack="PYTHON"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="EMERGENCY ROOM DASHBOARD"
+            backgroundImage={ERViz}
+            projectUrl="/erdashboard"
+            stack="TABLEAU"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="UEFA CHAMPIONS LEAGUE DASHBOARD"
+            backgroundImage={SoccerViz}
+            projectUrl="/uefadashboard"
+            stack="TABLEAU"
           />
         </div>
       </div>
