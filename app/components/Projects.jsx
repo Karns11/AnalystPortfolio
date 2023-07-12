@@ -33,6 +33,13 @@ const Projects = ({ darkMode }) => {
           />
           <ProjectItem
             darkMode={darkMode}
+            title="WALMART SALES DATA ANALYSIS PROJECT"
+            backgroundImage={salesData}
+            projectUrl="/salesdataanalysis"
+            stack="PYTHON"
+          />
+          <ProjectItem
+            darkMode={darkMode}
             title="EMERGENCY ROOM DASHBOARD"
             backgroundImage={ERViz}
             projectUrl="/erdashboard"
@@ -44,13 +51,6 @@ const Projects = ({ darkMode }) => {
             backgroundImage={SoccerViz}
             projectUrl="/uefadashboard"
             stack="TABLEAU"
-          />
-          <ProjectItem
-            darkMode={darkMode}
-            title="WALMART SALES DATA ANALYSIS PROJECT"
-            backgroundImage={salesData}
-            projectUrl="/salesdataanalysis"
-            stack="PYTHON"
           />
         </div>
       </div>
