@@ -3,6 +3,7 @@ import nbapredictor from "@public/assets/projects/NBAPredictor.png";
 import nbaImg from "@public/assets/projects/nbamarkup.png";
 import ERViz from "@public/assets/projects/ERViz.png";
 import SoccerViz from "@public/assets/projects/SoccerViz.png";
+import salesData from "@public/assets/projects/dataanalysispic.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = ({ darkMode }) => {
@@ -43,6 +44,13 @@ const Projects = ({ darkMode }) => {
             backgroundImage={SoccerViz}
             projectUrl="/uefadashboard"
             stack="TABLEAU"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="WALMART SALES DATA ANALYSIS PROJECT"
+            backgroundImage={salesData}
+            projectUrl="/salesdataanalysis"
+            stack="PYTHON"
           />
         </div>
       </div>
