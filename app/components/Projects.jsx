@@ -19,13 +19,6 @@ const Projects = ({ darkMode }) => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             darkMode={darkMode}
-            title="NBA STATS APP"
-            backgroundImage={nbaImg}
-            projectUrl="/nbaapp"
-            stack="REACT"
-          />
-          <ProjectItem
-            darkMode={darkMode}
             title="NBA GAME PREDICTOR"
             backgroundImage={nbapredictor}
             projectUrl="/nbapredictor"
@@ -51,6 +44,13 @@ const Projects = ({ darkMode }) => {
             backgroundImage={SoccerViz}
             projectUrl="/uefadashboard"
             stack="TABLEAU"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="NBA STATS APP"
+            backgroundImage={nbaImg}
+            projectUrl="/nbaapp"
+            stack="REACT"
           />
         </div>
       </div>
