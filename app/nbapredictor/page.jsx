@@ -274,7 +274,7 @@ const property = () => {
             alt="/" /> 
 
           <p className="mt-4">
-            This is kind of hard to see, so I will run ana analysis on this df and come up with an overall % correct. Here 
+            This is kind of hard to see, so I will run an analysis on this df and come up with an overall % correct. Here 
             is how I did that: 
           </p>
           <Image 
