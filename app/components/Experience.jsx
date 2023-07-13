@@ -21,7 +21,7 @@ const Experience = ({darkMode}) => {
                     <li className='mb-2'>Provided actionable suggestions to local businesses based on comprehensive data analysis, facilitating informed decision-making, and driving strategic growth initiatives.</li>
                     <li className='mb-2'>Developed predictive models using various techniques including regression analysis, time series modeling, and 
                       clustering algorithms in Python and R.</li>
-                    <li className='mb-2'>Exhibited exceptional communication skills through frequent and impactful client interactions, adeptly conveying insights and findings utilizing powerful data visualization tools like Tableau..</li>
+                    <li className='mb-2'>Exhibited exceptional communication skills through frequent and impactful client interactions, adeptly conveying insights and findings utilizing powerful data visualization tools like Tableau.</li>
                     <p><span className='font-bold'>Skills Used:</span> R, Python, Tableau, Excel, SQL, Microsoft Office Suite</p>
             </div>
             <div className='flex md:hidden flex-col justify-center'>
@@ -34,7 +34,7 @@ const Experience = ({darkMode}) => {
                     through automation and streamlining operations for enhanced efficiency.</li>
                     <li className='mb-2'>Collaborated with Market Data Analytics team members to conduct market research and forecasting, conduct data analysis, and share proposals/results 
                     through a combination of data visualization reports and presentations.</li>
-                    <li className='mb-2'>Mined, cleaned, and interpreted internal and external data sources using data analytics software’s like SQL and Alteryx to support business objectives.</li>
+                    <li className='mb-2'>Utilized SQL queries to efficiently extract and analyze vast datasets, enabling data-driven decision-making and strategic insights for process optimization and business growth.</li>
                     <li className='mb-2'>Assisted with ongoing collaboration between corporate marketing, regional sales and engineering teams and manufacturer partners.</li>
                     <p><span className='font-bold'>Skills Used:</span> Alteryx, SQL, Excel, Power BI, Tableau, Python, Microsoft Office Suite</p>
             </div>
