@@ -4,7 +4,7 @@ import nbapredictor2 from "@public/assets/projects/NBAPredictor2.jpeg";
 import nbaImg from "@public/assets/projects/nbamarkup.png";
 import ERViz from "@public/assets/projects/ERViz.png";
 import SoccerViz from "@public/assets/projects/SoccerViz.png";
-import salesData from "@public/assets/projects/dataanalysispic.png";
+import excelbikeproj from "@public/assets/projects/excelbikeproj.png";
 import salesData2 from "@public/assets/projects/dataanalysispic2.jpeg";
 import ProjectItem from "./ProjectItem";
 
@@ -53,6 +53,13 @@ const Projects = ({ darkMode }) => {
             backgroundImage={nbaImg}
             projectUrl="/nbaapp"
             stack="REACT"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="EXCEL BIKE DATA DASHBOARD"
+            backgroundImage={excelbikeproj}
+            projectUrl="/bikedataproject"
+            stack="EXCEL"
           />
         </div>
       </div>
