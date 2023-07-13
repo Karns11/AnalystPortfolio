@@ -13,7 +13,7 @@ const Experience = ({darkMode}) => {
         <div className={darkMode ? "grid md:grid-cols-2 gap-8 text-[#fff] pt-8" : "grid md:grid-cols-2 gap-8 pt-8"}>
             <div className='flex flex-col justify-center'>
                 <h3>Data Analyst</h3>
-                <h5>September 2022 - June 2023</h5>
+                <h5>August 2022 - June 2023</h5>
                 <p>Spartan Analytics Consulting Group</p>
             </div>
             <div>
