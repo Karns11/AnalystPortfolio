@@ -18,7 +18,7 @@ const Skills = ({ darkMode }) => {
     <div
       id="skills"
       className={
-        darkMode ? "w-full lg:h-screen p-2 bg-black" : "w-full lg:h-screen p-2"
+        darkMode ? "w-full lg:h-auto p-2 bg-black" : "w-full lg:h-auto p-2"
       }
     >
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
@@ -44,6 +44,11 @@ const Skills = ({ darkMode }) => {
                 <h3>PYTHON</h3>
               </div>
             </div>
+            <div className="text-start mt-2">
+              <li>Plethora of coursework/projects dealing with python</li>
+              <li>Completed multiple side projects using python</li>
+              <li>Used during Internship and organization experience</li>
+            </div>
           </div>
 
           <div
@@ -59,8 +64,12 @@ const Skills = ({ darkMode }) => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>ALTERYX</h3>
-                <p>*Certified</p>
+                <li>Certified</li>
               </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>Used everyday during market data analytics internship</li>
+              <li>Passed desginer core certification test</li>
             </div>
           </div>
 
@@ -79,6 +88,11 @@ const Skills = ({ darkMode }) => {
                 <h3>SQL</h3>
               </div>
             </div>
+            <div className="text-start mt-2">
+              <li>Used everyday during market data analytics internship</li>
+              <li>Plethora of coursework/projects dealing with SQL</li>
+              <li>Received datacamp certification</li>
+            </div>
           </div>
 
           <div
@@ -95,6 +109,10 @@ const Skills = ({ darkMode }) => {
               <div className="flex flex-col items-center justify-center">
                 <h3>EXCEL</h3>
               </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>Used everyday during market data analytics internship</li>
+              <li>Plethora of coursework/projects dealing with Excel</li>
             </div>
           </div>
 
@@ -113,6 +131,11 @@ const Skills = ({ darkMode }) => {
                 <h3>R</h3>
               </div>
             </div>
+            <div className="text-start mt-2">
+              <li>Plethora of coursework/projects dealing with R</li>
+              <li>Used during Internship and organization experience</li>
+              <li>Received datacamp certification</li>
+            </div>
           </div>
 
           <div
@@ -129,6 +152,11 @@ const Skills = ({ darkMode }) => {
               <div className="flex flex-col items-center justify-center">
                 <h3>TABLEAU</h3>
               </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>Plethora of coursework/projects dealing with Tableau</li>
+              <li>Used daily during Internship and organization experience</li>
+              <li>Completed multiple side projects with tableau</li>
             </div>
           </div>
 
@@ -147,6 +175,10 @@ const Skills = ({ darkMode }) => {
                 <h3>HTML</h3>
               </div>
             </div>
+            <div className="text-start mt-2">
+              <li>Received freecodecamp responsive web design certification</li>
+              <li>Fully developed this portfolio website using self-taught skills</li>
+            </div>
           </div>
 
           <div
@@ -163,6 +195,10 @@ const Skills = ({ darkMode }) => {
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
               </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>Received freecodecamp responsive web design certification</li>
+              <li>Fully developed this portfolio website using self-taught skills</li>
             </div>
           </div>
 
@@ -181,6 +217,10 @@ const Skills = ({ darkMode }) => {
                 <h3>JAVASCRIPT</h3>
               </div>
             </div>
+            <div className="text-start mt-2">
+              <li>Received freecodecamp data structures and algorithms certification</li>
+              <li>Fully developed <a className="underline" href='https://letsfitswole.onrender.com/' target='_blank'>LET'S FIT SWOLE</a> utilizing git skills</li>
+            </div>
           </div>
 
           <div
@@ -198,6 +238,10 @@ const Skills = ({ darkMode }) => {
                 <h3>GIT</h3>
               </div>
             </div>
+            <div className="text-start mt-2">
+              <li>Consistantly use git when developing websites</li>
+              <li>Fully developed <a className="underline" href='https://letsfitswole.onrender.com/' target='_blank'>LET'S FIT SWOLE</a> utilizing git skills</li>
+            </div>
           </div>
 
           <div
@@ -214,6 +258,11 @@ const Skills = ({ darkMode }) => {
               <div className="flex flex-col items-center justify-center">
                 <h3>MORE SKILLS</h3>
               </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>Constantly am working on projects and learning new skills</li>
+              <li>Always working on sharpening my skills</li>
+              <li>I like to consider myself a continued learner</li>
             </div>
           </div>
         </div>
