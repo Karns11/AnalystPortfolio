@@ -5,6 +5,7 @@ import nbaImg from "@public/assets/projects/nbamarkup.png";
 import ERViz from "@public/assets/projects/ERViz.png";
 import SoccerViz from "@public/assets/projects/SoccerViz.png";
 import salesData from "@public/assets/projects/dataanalysispic.png";
+import salesData2 from "@public/assets/projects/dataanalysispic2.jpeg";
 import ProjectItem from "./ProjectItem";
 
 const Projects = ({ darkMode }) => {
@@ -28,7 +29,7 @@ const Projects = ({ darkMode }) => {
           <ProjectItem
             darkMode={darkMode}
             title="WALMART SALES DATA ANALYSIS PROJECT"
-            backgroundImage={salesData}
+            backgroundImage={salesData2}
             projectUrl="/salesdataanalysis"
             stack="PYTHON"
           />
