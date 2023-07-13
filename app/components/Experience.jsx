@@ -13,17 +13,15 @@ const Experience = ({darkMode}) => {
         <div className={darkMode ? "grid md:grid-cols-2 gap-8 text-[#fff] pt-8" : "grid md:grid-cols-2 gap-8 pt-8"}>
             <div className='flex flex-col justify-center'>
                 <h3>Data Analyst</h3>
-                <h5>September 2022 - May 2023</h5>
+                <h5>September 2022 - June 2023</h5>
                 <p>Spartan Analytics Consulting Group</p>
             </div>
             <div>
-                    <li className='mb-2'>Demonstrated leadership and analytical skills as a selected member of the prestigious client engagement team.</li>
-                    <li className='mb-2'>Conducted comprehensive data analysis encompassing trend identification, statistical modeling, and process improvement 
-                        recommendations, empowering local businesses with valuable insights for informed decision-making and strategic growth.</li>
-                    <li className='mb-2'>Significantly enhanced my data analysis skills through proficient utilization of Python, R, Excel, SQL, and Tableau, resulting in 
-                        exceptional data-driven insights and actionable results.</li>
-                    <li className='mb-2'>Exhibited exceptional communication skills through frequent and impactful client interactions, adeptly conveying insights and findings 
-                        utilizing powerful data visualization tools like Tableau.</li>
+                    <li className='mb-2'>Analyzed large volumes of sales data to conduct comprehensive data analysis.</li>
+                    <li className='mb-2'>Provided actionable suggestions to local businesses based on comprehensive data analysis, facilitating informed decision-making, and driving strategic growth initiatives.</li>
+                    <li className='mb-2'>Developed predictive models using various techniques including regression analysis, time series modeling, and 
+                      clustering algorithms in Python and R.</li>
+                    <li className='mb-2'>Exhibited exceptional communication skills through frequent and impactful client interactions, adeptly conveying insights and findings utilizing powerful data visualization tools like Tableau..</li>
                     <p><span className='font-bold'>Skills Used:</span> R, Python, Tableau, Excel, SQL, Microsoft Office Suite</p>
             </div>
             <div className='flex md:hidden flex-col justify-center'>
