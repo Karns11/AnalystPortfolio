@@ -1,5 +1,6 @@
 import React from "react";
 import nbapredictor from "@public/assets/projects/NBAPredictor.png";
+import nbapredictor2 from "@public/assets/projects/NBAPredictor2.jpeg";
 import nbaImg from "@public/assets/projects/nbamarkup.png";
 import ERViz from "@public/assets/projects/ERViz.png";
 import SoccerViz from "@public/assets/projects/SoccerViz.png";
@@ -20,7 +21,7 @@ const Projects = ({ darkMode }) => {
           <ProjectItem
             darkMode={darkMode}
             title="NBA GAME PREDICTOR"
-            backgroundImage={nbapredictor}
+            backgroundImage={nbapredictor2}
             projectUrl="/nbapredictor"
             stack="PYTHON"
           />
