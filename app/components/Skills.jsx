@@ -239,7 +239,6 @@ const Skills = ({ darkMode }) => {
               </div>
             </div>
             <div className="text-start mt-2">
-              <li>Consistantly use git when developing websites</li>
               <li>Fully developed <a className="underline" href='https://letsfitswole.onrender.com/' target='_blank'>LET'S FIT SWOLE</a> utilizing git skills</li>
             </div>
           </div>
