@@ -20,16 +20,13 @@ const About = ({ darkMode }) => {
           </p>
           <h2 className={darkMode ? "py-4 text-[#fff]" : "py-4"}>Who I Am</h2>
           <p className={darkMode ? "py-2 text-[#fff]" : "py-2 text-gray-600"}>
-          My ultimate career goal is to make a significant impact in the field of data analytics. 
-          I was fortunate to gain transformative experience through a data analytics internship, which 
-          ignited my enthusiasm for analyzing data and solidified my determination to excel as an analyst.
-          </p>
-          <p className={darkMode ? "py-2 text-[#fff]" : "py-2 text-gray-600"}>
-            I will be graduating from Michigan State University's Eli Broad College of
-            Business in August of 2023 with a B.A. in Marketing and a minor in Information
-            Technology. Additionally, I am continuously learning new skills and you can find
-            me working on a project each and every day. I am confident that there is nobody more passionate
-            about data analytics than me.
+            My ultimate career goal is to make a significant impact in the field
+            of data analytics. I will be graduating from Michigan State
+            University's Eli Broad College of Business in August of 2023 with a
+            B.A. in Marketing and a minor in Information Technology.
+            Additionally, I am continuously learning new skills and you can find
+            me working on a project each and every day. I am confident that
+            there is nobody more passionate about data analytics than me.
           </p>
           <Link href="/#projects">
             <p

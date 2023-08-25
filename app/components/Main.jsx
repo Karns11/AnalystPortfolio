@@ -4,8 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = ({ darkMode }) => {
-
-  const words = ['Data Analyst', 'Business Analyst', 'Analyst'];
+  const words = ["Data Analyst", "Business Analyst", "Analyst"];
   const [currentWord, setCurrentWord] = useState(words[0]);
 
   useEffect(() => {
@@ -13,7 +12,7 @@ const Main = ({ darkMode }) => {
       const currentIndex = words.indexOf(currentWord);
       const nextIndex = (currentIndex + 1) % words.length;
       setCurrentWord(words[nextIndex]);
-    }, 2500); 
+    }, 2500);
 
     return () => {
       clearInterval(interval);
@@ -44,11 +43,10 @@ const Main = ({ darkMode }) => {
                 : "py-4 text-gray-600 max-w-[70%] m-auto"
             }
           >
-            Driven by a deep passion for data analytics, my career goal is to
-            excel in this field. A transformative data analytics
-            internship fueled my enthusiasm for data alalysis,
-            solidifying my determination to excel as an analyst.
-            My previous experience, education, and fast-learning capabilities will make me a great analyst for your company.
+            Results-oriented business professional with 2 years of experience in
+            data analysis within a combination of different industries. A
+            transformative data analytics internship fueled my enthusiasm for
+            data alalysis, solidifying my determination to excel as an analyst.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link href="https://www.linkedin.com/in/nathan-karns-63820a216/">

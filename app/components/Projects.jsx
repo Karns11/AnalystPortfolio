@@ -47,6 +47,7 @@ const Projects = ({ darkMode }) => {
             projectUrl="/uefadashboard"
             stack="TABLEAU"
           />
+
           <ProjectItem
             darkMode={darkMode}
             title="NBA STATS APP"
