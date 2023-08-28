@@ -6,6 +6,7 @@ import ERViz from "@public/assets/projects/ERViz.png";
 import SoccerViz from "@public/assets/projects/SoccerViz.png";
 import excelbikeproj from "@public/assets/projects/excelbikeproj.png";
 import salesData2 from "@public/assets/projects/dataanalysispic2.jpeg";
+import nbalogodrawing from "@public/assets/projects/nbalogodrawing.jpg";
 import ProjectItem from "./ProjectItem";
 
 const Projects = ({ darkMode }) => {
@@ -61,6 +62,13 @@ const Projects = ({ darkMode }) => {
             backgroundImage={excelbikeproj}
             projectUrl="/bikedataproject"
             stack="EXCEL"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="NBA PLAYER PTS REGRESSION MODEL"
+            backgroundImage={nbalogodrawing}
+            projectUrl="https://www.kaggle.com/code/nathankarns/nba-pts-model/notebook"
+            stack="R"
           />
         </div>
       </div>
