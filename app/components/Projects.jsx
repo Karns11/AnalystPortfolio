@@ -7,6 +7,7 @@ import SoccerViz from "@public/assets/projects/SoccerViz.png";
 import excelbikeproj from "@public/assets/projects/excelbikeproj.png";
 import salesData2 from "@public/assets/projects/dataanalysispic2.jpeg";
 import nbalogodrawing from "@public/assets/projects/nbalogodrawing.jpg";
+import mlb from "@public/assets/projects/mlb.jpg";
 import ProjectItem from "./ProjectItem";
 
 const Projects = ({ darkMode }) => {
@@ -36,6 +37,20 @@ const Projects = ({ darkMode }) => {
           />
           <ProjectItem
             darkMode={darkMode}
+            title="NBA PLAYER PTS REGRESSION MODEL"
+            backgroundImage={nbalogodrawing}
+            projectUrl="https://www.kaggle.com/code/nathankarns/nba-pts-model/notebook"
+            stack="R"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="MLB PLAYERS HITS AND HRS REGRESSION MODEL"
+            backgroundImage={mlb}
+            projectUrl="https://www.kaggle.com/code/nathankarns/mlb-players-hits-and-home-runs-regression-model/notebook"
+            stack="R"
+          />
+          <ProjectItem
+            darkMode={darkMode}
             title="EMERGENCY ROOM DASHBOARD"
             backgroundImage={ERViz}
             projectUrl="/erdashboard"
@@ -62,13 +77,6 @@ const Projects = ({ darkMode }) => {
             backgroundImage={excelbikeproj}
             projectUrl="/bikedataproject"
             stack="EXCEL"
-          />
-          <ProjectItem
-            darkMode={darkMode}
-            title="NBA PLAYER PTS REGRESSION MODEL"
-            backgroundImage={nbalogodrawing}
-            projectUrl="https://www.kaggle.com/code/nathankarns/nba-pts-model/notebook"
-            stack="R"
           />
         </div>
       </div>
