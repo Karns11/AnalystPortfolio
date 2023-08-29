@@ -229,9 +229,9 @@ export default function Home() {
       </div>
       <Main darkMode={darkMode} />
       <About darkMode={darkMode} />
+      <Projects darkMode={darkMode} />
       <Skills darkMode={darkMode} />
       <Experience darkMode={darkMode} />
-      <Projects darkMode={darkMode} />
       <Contact darkMode={darkMode} />
     </div>
   );

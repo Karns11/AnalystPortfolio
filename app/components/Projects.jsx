@@ -23,20 +23,6 @@ const Projects = ({ darkMode }) => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             darkMode={darkMode}
-            title="NBA GAME PREDICTOR"
-            backgroundImage={nbapredictor2}
-            projectUrl="/nbapredictor"
-            stack="PYTHON"
-          />
-          <ProjectItem
-            darkMode={darkMode}
-            title="WALMART SALES DATA ANALYSIS PROJECT"
-            backgroundImage={salesData2}
-            projectUrl="/salesdataanalysis"
-            stack="PYTHON"
-          />
-          <ProjectItem
-            darkMode={darkMode}
             title="NBA PLAYER PTS REGRESSION MODEL"
             backgroundImage={nbalogodrawing}
             projectUrl="https://www.kaggle.com/code/nathankarns/nba-pts-model/notebook"
@@ -48,6 +34,20 @@ const Projects = ({ darkMode }) => {
             backgroundImage={mlb}
             projectUrl="https://www.kaggle.com/code/nathankarns/mlb-players-hits-and-home-runs-regression-model/notebook"
             stack="R"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="NBA GAME PREDICTOR"
+            backgroundImage={nbapredictor2}
+            projectUrl="/nbapredictor"
+            stack="PYTHON"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="WALMART SALES DATA ANALYSIS PROJECT"
+            backgroundImage={salesData2}
+            projectUrl="/salesdataanalysis"
+            stack="PYTHON"
           />
           <ProjectItem
             darkMode={darkMode}
