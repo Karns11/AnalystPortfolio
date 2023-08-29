@@ -48,16 +48,6 @@ const Main = ({ darkMode }) => {
             transformative data analytics internship fueled my enthusiasm for
             data alalysis, solidifying my determination to excel as an analyst.
           </p>
-          <p
-            className={
-              darkMode
-                ? "py-4 text-[#fff] max-w-[70%] m-auto"
-                : "py-4 text-gray-600 max-w-[70%] m-auto"
-            }
-          >
-            (Yes, I developed this website using self-taught web development
-            skills.)
-          </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link href="https://www.linkedin.com/in/nathan-karns-63820a216/">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#379237] animated-icon">
