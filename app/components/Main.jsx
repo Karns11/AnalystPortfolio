@@ -12,7 +12,7 @@ const Main = ({ darkMode }) => {
       const currentIndex = words.indexOf(currentWord);
       const nextIndex = (currentIndex + 1) % words.length;
       setCurrentWord(words[nextIndex]);
-    }, 2500);
+    }, 2525);
 
     return () => {
       clearInterval(interval);
@@ -47,6 +47,16 @@ const Main = ({ darkMode }) => {
             data analysis within a combination of different industries. A
             transformative data analytics internship fueled my enthusiasm for
             data alalysis, solidifying my determination to excel as an analyst.
+          </p>
+          <p
+            className={
+              darkMode
+                ? "py-4 text-[#fff] max-w-[70%] m-auto"
+                : "py-4 text-gray-600 max-w-[70%] m-auto"
+            }
+          >
+            (Yes, I developed this website using self-taught web development
+            skills.)
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link href="https://www.linkedin.com/in/nathan-karns-63820a216/">

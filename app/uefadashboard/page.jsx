@@ -24,25 +24,50 @@ const property = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
+          <div className="w-[55px] mb-4">
+            <Link href="/#projects">
+              <p className="underline cursor-pointer">Back</p>
+            </Link>
+          </div>
           <p className="text-[#379237]">Project</p>
           <h2>Overview</h2>
           <p>
-          The UEFA CHampions Leage Data Analysis Dashboard is a powerful Tableau tool designed to collect, visualize, and analyze various data from the leagues history. This project was undertaken out of my strong 
-          passion for sports and my desire to pursue a career in data analysis. Using Tableau's robust features, the dashboard provides multiple visualizations to gain insights into UEFA stats.
-          The data comes from Kaggle.com. The dashboard offers a range of visualizations and metrics to analyze the stats. It includes a map, butterfly charts, horizontal bar charts, and radial bar chart that 
-          display key performance indicators such as Top Clubs By Games Played, Top Clubs By Goals Scored, Top Coaches By Total Appearance, Top Players By Total Appearance, and more. These visualizations enable 
-          users to identify patterns, trends, and insights to help win arguments or become more familiar with the league. These visualizations include to use of calculated fields and data joins in order to provide more accurate
-          statistics and satisfy my needs for the project. This project can easily be translated into real-world scenarios and I am happy to be able to show off this passion project.
+            The UEFA CHampions Leage Data Analysis Dashboard is a powerful
+            Tableau tool designed to collect, visualize, and analyze various
+            data from the leagues history. This project was undertaken out of my
+            strong passion for sports and my desire to pursue a career in data
+            analysis. Using Tableau's robust features, the dashboard provides
+            multiple visualizations to gain insights into UEFA stats. The data
+            comes from Kaggle.com. The dashboard offers a range of
+            visualizations and metrics to analyze the stats. It includes a map,
+            butterfly charts, horizontal bar charts, and radial bar chart that
+            display key performance indicators such as Top Clubs By Games
+            Played, Top Clubs By Goals Scored, Top Coaches By Total Appearance,
+            Top Players By Total Appearance, and more. These visualizations
+            enable users to identify patterns, trends, and insights to help win
+            arguments or become more familiar with the league. These
+            visualizations include to use of calculated fields and data joins in
+            order to provide more accurate statistics and satisfy my needs for
+            the project. This project can easily be translated into real-world
+            scenarios and I am happy to be able to show off this passion
+            project.
           </p>
-          <p className="mt-4">In summary, the UEFA CHampions Leage Data Analysis Dashboard in Tableau is a comprehensive tool that combines data collection, visualization, and advanced analytics techniques. 
-          It provides sports entuhsiasts with a powerful resource to analyze stats, gain actionable insights, and make data-driven decisions to satisfy needs.
+          <p className="mt-4">
+            In summary, the UEFA CHampions Leage Data Analysis Dashboard in
+            Tableau is a comprehensive tool that combines data collection,
+            visualization, and advanced analytics techniques. It provides sports
+            entuhsiasts with a powerful resource to analyze stats, gain
+            actionable insights, and make data-driven decisions to satisfy
+            needs.
           </p>
           <div className="flex items-center justify-center pt-8">
-            <Image className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400"
-            width={700}
-            hright={700}
-            src={SoccerViz}
-            alt="/" />
+            <Image
+              className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400"
+              width={700}
+              hright={700}
+              src={SoccerViz}
+              alt="/"
+            />
           </div>
           <a
             href="https://www.kaggle.com/datasets/basharalkuwaiti/champions-league-era-stats?resource=download"
@@ -52,22 +77,17 @@ const property = () => {
           >
             <button className="px-8 py-2 mt-4 mr-8">Data</button>
           </a>
-          
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4 md:h-[200px]">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Tableau
               </p>
-              
             </div>
           </div>
         </div>
-        <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
-        </Link>
       </div>
     </div>
   );

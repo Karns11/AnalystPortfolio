@@ -24,6 +24,11 @@ const property = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
+          <div className="w-[55px] mb-4">
+            <Link href="/#projects">
+              <p className="underline cursor-pointer">Back</p>
+            </Link>
+          </div>
           <p className="text-[#379237]">Project</p>
           <h2>Overview</h2>
           <p>
@@ -37,11 +42,11 @@ const property = () => {
             season averages. I developed this application because my roommate
             and I were bored while watching the NBA playoffs and wanted a way to
             make more informed betting decicions which, in turn, made the games
-            more fun to watch, effectivley curing our boredom and strengthening my data analysis skills. 
-            The biggest challenge of this appliation was being able to list the opposing
-            team on each row. This was done by making two different api calls
-            and correlating each team ID to the opposing team ID in the box
-            score of each game.
+            more fun to watch, effectivley curing our boredom and strengthening
+            my data analysis skills. The biggest challenge of this appliation
+            was being able to list the opposing team on each row. This was done
+            by making two different api calls and correlating each team ID to
+            the opposing team ID in the box score of each game.
           </p>
           <a
             href="https://github.com/Karns11/New-NBA-App"
@@ -58,7 +63,7 @@ const property = () => {
             <button className="px-8 py-2 mt-4">Demo</button>
           </a>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4 md:h-[200px]">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
@@ -68,9 +73,6 @@ const property = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
-        </Link>
       </div>
     </div>
   );

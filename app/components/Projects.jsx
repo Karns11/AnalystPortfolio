@@ -1,6 +1,7 @@
 import React from "react";
 import nbapredictor from "@public/assets/projects/NBAPredictor.png";
 import nbapredictor2 from "@public/assets/projects/NBAPredictor2.jpeg";
+import nba1 from "@public/assets/projects/nba1.jpg";
 import nbaImg from "@public/assets/projects/nbamarkup.png";
 import ERViz from "@public/assets/projects/ERViz.png";
 import SoccerViz from "@public/assets/projects/SoccerViz.png";
@@ -8,6 +9,7 @@ import excelbikeproj from "@public/assets/projects/excelbikeproj.png";
 import salesData2 from "@public/assets/projects/dataanalysispic2.jpeg";
 import nbalogodrawing from "@public/assets/projects/nbalogodrawing.jpg";
 import mlb from "@public/assets/projects/mlb.jpg";
+import titanic from "@public/assets/projects/titanic.jpg";
 import ProjectItem from "./ProjectItem";
 
 const Projects = ({ darkMode }) => {
@@ -35,18 +37,25 @@ const Projects = ({ darkMode }) => {
             projectUrl="https://www.kaggle.com/code/nathankarns/mlb-players-hits-and-home-runs-regression-model/notebook"
             stack="R"
           />
-          <ProjectItem
-            darkMode={darkMode}
-            title="NBA GAME PREDICTOR"
-            backgroundImage={nbapredictor2}
-            projectUrl="/nbapredictor"
-            stack="PYTHON"
-          />
-          <ProjectItem
+          {/* <ProjectItem
             darkMode={darkMode}
             title="WALMART SALES DATA ANALYSIS PROJECT"
             backgroundImage={salesData2}
             projectUrl="/salesdataanalysis"
+            stack="PYTHON"
+          /> */}
+          <ProjectItem
+            darkMode={darkMode}
+            title="TITANIC SURVIVAL PREDICTIONS REGRESSION MODEL"
+            backgroundImage={titanic}
+            projectUrl="https://www.kaggle.com/code/nathankarns/titanic-predictions"
+            stack="R"
+          />
+          <ProjectItem
+            darkMode={darkMode}
+            title="NBA GAME PREDICTOR"
+            backgroundImage={nba1}
+            projectUrl="/nbapredictor"
             stack="PYTHON"
           />
           <ProjectItem

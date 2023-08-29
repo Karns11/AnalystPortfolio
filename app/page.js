@@ -68,6 +68,17 @@ export default function Home() {
                   About
                 </li>
               </Link>
+              <Link href="/#projects">
+                <li
+                  className={
+                    darkMode
+                      ? "ml-10 text-sm uppercase hover:border-b text-[#fff]"
+                      : "ml-10 text-sm uppercase hover:border-b"
+                  }
+                >
+                  Projects
+                </li>
+              </Link>
               <Link href="/#skills">
                 <li
                   className={
@@ -88,17 +99,6 @@ export default function Home() {
                   }
                 >
                   Experience
-                </li>
-              </Link>
-              <Link href="/#projects">
-                <li
-                  className={
-                    darkMode
-                      ? "ml-10 text-sm uppercase hover:border-b text-[#fff]"
-                      : "ml-10 text-sm uppercase hover:border-b"
-                  }
-                >
-                  Projects
                 </li>
               </Link>
               <Link href="/#contact">
@@ -188,14 +188,14 @@ export default function Home() {
                 <Link href="/#about">
                   <li className="py-4 text-sm">About</li>
                 </Link>
+                <Link href="/#projects">
+                  <li className="py-4 text-sm">Projects</li>
+                </Link>
                 <Link href="/#skills">
                   <li className="py-4 text-sm">Skills</li>
                 </Link>
                 <Link href="/#experience">
                   <li className="py-4 text-sm">Experience</li>
-                </Link>
-                <Link href="/#projects">
-                  <li className="py-4 text-sm">Projects</li>
                 </Link>
                 <Link href="/#contact">
                   <li className="py-4 text-sm">Contact</li>
