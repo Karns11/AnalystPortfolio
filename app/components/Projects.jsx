@@ -53,7 +53,7 @@ const Projects = ({ darkMode }) => {
           />
           <ProjectItem
             darkMode={darkMode}
-            title="NBA GAME PREDICTOR"
+            title="NBA GAME PREDICTOR REGRESSION MODEL"
             backgroundImage={nba1}
             projectUrl="/nbapredictor"
             stack="PYTHON"
