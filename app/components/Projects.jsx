@@ -9,6 +9,7 @@ import excelbikeproj from "@public/assets/projects/excelbikeproj.png";
 import salesData2 from "@public/assets/projects/dataanalysispic2.jpeg";
 import nbalogodrawing from "@public/assets/projects/nbalogodrawing.jpg";
 import mlb from "@public/assets/projects/mlb.jpg";
+import mlb5 from "@public/assets/projects/mlb5.jpg";
 import titanic from "@public/assets/projects/titanic.jpg";
 import ProjectItem from "./ProjectItem";
 
@@ -33,7 +34,7 @@ const Projects = ({ darkMode }) => {
           <ProjectItem
             darkMode={darkMode}
             title="MLB PLAYERS HITS AND HRS REGRESSION MODEL"
-            backgroundImage={mlb}
+            backgroundImage={mlb5}
             projectUrl="https://www.kaggle.com/code/nathankarns/mlb-players-hits-and-home-runs-regression-model/notebook"
             stack="R"
           />
