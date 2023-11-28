@@ -18,8 +18,22 @@ const Experience = ({ darkMode }) => {
           }
         >
           <div className="flex flex-col justify-center">
+            <h3>Associate Analyst, Advanced Analytics</h3>
+            <h5>October 2023 - Present</h5>
+            <p>The Walt Disney Company - Partners Federal Credit Union</p>
+          </div>
+          <div>
+            <li className="mb-2">...</li>
+            <li className="mb-2">...</li>
+            <li className="mb-2">...</li>
+            <li className="mb-2">...</li>
+            <p>
+              <span className="font-bold">Skills Used:</span> ...
+            </p>
+          </div>
+          <div className="flex md:hidden flex-col justify-center">
             <h3>Data Analyst</h3>
-            <h5>August 2022 - Present</h5>
+            <h5>Ausust 2022 - August 2023</h5>
             <p>Spartan Analytics Consulting Group</p>
           </div>
           <div>
@@ -47,7 +61,12 @@ const Experience = ({ darkMode }) => {
               Tableau, Excel, SQL, Microsoft Office Suite
             </p>
           </div>
-          <div className="flex md:hidden flex-col justify-center">
+          <div className="hidden md:flex flex-col justify-center items-end">
+            <h3>Data Analyst</h3>
+            <h5>August 2022 - August 2023</h5>
+            <p>Spartan Analytics Consulting Group</p>
+          </div>
+          <div className="flex flex-col justify-center">
             <h3>Market Data Analytics Intern</h3>
             <h5>May 2022 - August 2022</h5>
             <p>McNaughton-McKay Electric Company</p>
@@ -74,35 +93,6 @@ const Experience = ({ darkMode }) => {
             <p>
               <span className="font-bold">Skills Used:</span> Alteryx, SQL,
               Excel, Power BI, Tableau, Python, Microsoft Office Suite
-            </p>
-          </div>
-          <div className="hidden md:flex flex-col justify-center items-end">
-            <h3>Market Data Analytics Intern</h3>
-            <h5>May 2022 - August 2022</h5>
-            <p>McNaughton-McKay Electric Company</p>
-          </div>
-          <div className="flex flex-col justify-center">
-            <h3>Leadership Development Intern</h3>
-            <h5>February 2022 - May 2022</h5>
-            <p>Ripplematch</p>
-          </div>
-          <div>
-            <li className="mb-2">
-              Increased user base on campus by 14% through using diverse
-              strategies like social media marketing, email marketing,
-              presentations, and networking.
-            </li>
-            <li className="mb-2">
-              Developed dashboards using Tableau to track KPIs such as click
-              through rates, customer acquisition costs, and customer retention.
-            </li>
-            <li className="mb-2">
-              Collaboratively utilized strategic analysis to identify and
-              implement innovative growth strategies.
-            </li>
-            <p>
-              <span className="font-bold">Skills Used:</span> Excel, Tableau,
-              Digital Marketing
             </p>
           </div>
         </div>

@@ -34,8 +34,11 @@ const Main = ({ darkMode }) => {
             Hey, I'm <span className="text-[#379237]">Nate</span>
           </h1>
           <h1 className={darkMode ? "py-2 text-[#fff]" : "py-2 text-gray-700"}>
-            Aspiring <span>{currentWord}</span>
+            Associate Analyst, Advanced Analytics
           </h1>
+          <h3 className={darkMode ? "py-2 text-[#fff]" : "py-2 text-gray-700"}>
+            The Walt Disney Company - Partners Federal Credit Union
+          </h3>
           <p
             className={
               darkMode
@@ -43,10 +46,10 @@ const Main = ({ darkMode }) => {
                 : "py-4 text-gray-600 max-w-[70%] m-auto"
             }
           >
-            Results-oriented business professional with 2 years of experience in
-            data analysis within a combination of different industries. A
-            transformative data analytics internship fueled my enthusiasm for
-            data alalysis, solidifying my determination to excel as an analyst.
+            I recently earned a degree from Michigan State University and am
+            currently channeling my profound passion for analytics in my role as
+            an Associate Analyst, Advanced Analytics at Partners Federal Credit
+            Union—a part of The Walt Disney Company.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link href="https://www.linkedin.com/in/nathan-karns-63820a216/">
