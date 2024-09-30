@@ -15,14 +15,14 @@ const Contact = ({ darkMode }) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_965e8b9",
+        "service_rqan50i",
         "template_r4ybnou",
         form.current,
-        "o-y_5neqNasZHuGbk"
+        "8-sIig-oSP_TOaMU-"
       )
       .then(
         (result) => {
-          toast.success("Message Sent!");
+          toast.success("Message sent successfully. Thanks for reaching out!");
           e.target.reset();
         },
         (error) => {
