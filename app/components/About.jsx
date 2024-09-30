@@ -22,12 +22,11 @@ const About = ({ darkMode }) => {
           <p className={darkMode ? "py-2 text-[#fff]" : "py-2 text-gray-600"}>
             I am currently an Associate Analyst, Advanced Analytics at The Walt
             Disney Company - Partners Federal Credit Union. I graduated from
-            Michigan State University's Eli Broad College of Business in August
-            of 2023 with a B.A. in Marketing and a minor in Information
+            Michigan State University's Eli Broad College of Business with a
+            Bachelor's degree in Marketing with a minor in Information
             Technology. Additionally, I am continuously learning new skills and
             you can find me working on a project each and every day. I am
-            confident that there is nobody more passionate about data analytics
-            than me.
+            confident that there is nobody more passionate about data than me.
           </p>
           <Link href="/#projects">
             <p

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-import html from "@public/assets/skills/html.png";
-import css from "@public/assets/skills/css.png";
-import javascript from "@public/assets/skills/javascript.png";
+import powerbi from "@public/assets/skills/powerbi.png";
+import airflow from "@public/assets/skills/airflow.png";
+import mage from "@public/assets/skills/mage.png";
 import excel2 from "@public/assets/skills/excel.png";
 import tableau2 from "@public/assets/skills/tableau.svg";
 import sql from "@public/assets/skills/sql.png";
@@ -29,7 +29,7 @@ const Skills = ({ darkMode }) => {
           What I Can Do
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div
+          <div
             className={
               darkMode
                 ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
@@ -45,9 +45,105 @@ const Skills = ({ darkMode }) => {
               </div>
             </div>
             <div className="text-start mt-2">
-              <li>Plethora of coursework/projects dealing with python</li>
-              <li>Completed multiple side projects using python</li>
-              <li>Used during Internship and organization experience</li>
+              <li>Several data pipelines built using python</li>
+              <li>Extensive course work utilizing python</li>
+              <li>Dozens of projects built using python</li>
+            </div>
+          </div>
+
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={r} width={64} height={64} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>R</h3>
+              </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>Maintain several critical business processes built with R</li>
+              <li>
+                Leverage R for preprocessing data across numerous critical
+                business reports.
+              </li>
+              {/* <li>Received datacamp certification</li> */}
+            </div>
+          </div>
+
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={airflow} width={64} height={64} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Airflow</h3>
+              </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>
+                Used Airflow to orchestrate NFL data pipeline used for NFL
+                fantasy points predictions
+              </li>
+              {/* <li></li> */}
+            </div>
+          </div>
+
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={mage} width={64} height={64} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>MAGE</h3>
+              </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>
+                Leveraged Mage to orchestrate NFL data pipelines, which are used
+                for NFL fantasy points predictions
+              </li>
+            </div>
+          </div>
+
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={sql} width={64} height={64} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>SQL</h3>
+              </div>
+            </div>
+            <div className="text-start mt-2">
+              <li>
+                Use SQL daily during current and previous work experiences
+              </li>
+              <li>Extensive coursework utilizing SQL</li>
+              <li>Received datacamp certification</li>
             </div>
           </div>
 
@@ -68,30 +164,10 @@ const Skills = ({ darkMode }) => {
               </div>
             </div>
             <div className="text-start mt-2">
-              <li>Used everyday during market data analytics internship</li>
-              <li>Passed desginer core certification test</li>
-            </div>
-          </div>
-
-          <div
-            className={
-              darkMode
-                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
-                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
-            }
-          >
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image alt="/" src={sql} width={64} height={64} />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>SQL</h3>
-              </div>
-            </div>
-            <div className="text-start mt-2">
-              <li>Used everyday during market data analytics internship</li>
-              <li>Plethora of coursework/projects dealing with SQL</li>
-              <li>Received datacamp certification</li>
+              <li>
+                Utilized Alteryx daily during market data analytics internship
+              </li>
+              <li>Passed desginer core certification exam</li>
             </div>
           </div>
 
@@ -111,30 +187,10 @@ const Skills = ({ darkMode }) => {
               </div>
             </div>
             <div className="text-start mt-2">
-              <li>Used everyday during market data analytics internship</li>
-              <li>Plethora of coursework/projects dealing with Excel</li>
-            </div>
-          </div>
-
-          <div
-            className={
-              darkMode
-                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
-                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
-            }
-          >
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image alt="/" src={r} width={64} height={64} />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>R</h3>
-              </div>
-            </div>
-            <div className="text-start mt-2">
-              <li>Plethora of coursework/projects dealing with R</li>
-              <li>Used during Internship and organization experience</li>
-              <li>Received datacamp certification</li>
+              <li>
+                Use Excel daily during current and previous work experiences
+              </li>
+              <li>Extensive coursework utilizing Excel</li>
             </div>
           </div>
 
@@ -154,8 +210,8 @@ const Skills = ({ darkMode }) => {
               </div>
             </div>
             <div className="text-start mt-2">
-              <li>Plethora of coursework/projects dealing with Tableau</li>
-              <li>Used daily during Internship and organization experience</li>
+              <li>Extensive coursework utilizing Tableau</li>
+              <li>Used Tableau daily during curent and previous experiences</li>
               <li>Completed multiple side projects with tableau</li>
             </div>
           </div>
@@ -169,57 +225,19 @@ const Skills = ({ darkMode }) => {
           >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image alt="/" src={html} width={64} height={64} />
+                <Image alt="/" src={powerbi} width={64} height={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
+                <h3>Power BI</h3>
               </div>
             </div>
             <div className="text-start mt-2">
-              <li>Received freecodecamp responsive web design certification</li>
-              <li>Fully developed this portfolio website using self-taught skills</li>
-            </div>
-          </div>
-
-          <div
-            className={
-              darkMode
-                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
-                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
-            }
-          >
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image alt="/" src={css} width={64} height={64} />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>CSS</h3>
-              </div>
-            </div>
-            <div className="text-start mt-2">
-              <li>Received freecodecamp responsive web design certification</li>
-              <li>Fully developed this portfolio website using self-taught skills</li>
-            </div>
-          </div>
-
-          <div
-            className={
-              darkMode
-                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
-                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
-            }
-          >
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image alt="/" src={javascript} width={64} height={64} />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>JAVASCRIPT</h3>
-              </div>
-            </div>
-            <div className="text-start mt-2">
-              <li>Received freecodecamp data structures and algorithms certification</li>
-              <li>Fully developed <a className="underline" href='https://letsfitswole.onrender.com/' target='_blank'>LET'S FIT SWOLE</a> utilizing git skills</li>
+              <li>
+                Developed several business intelligence reports using Power BI
+              </li>
+              <li>
+                Utilized Power BI daily during current and previous experiences
+              </li>
             </div>
           </div>
 
@@ -239,7 +257,11 @@ const Skills = ({ darkMode }) => {
               </div>
             </div>
             <div className="text-start mt-2">
-              <li>Fully developed <a className="underline" href='https://letsfitswole.onrender.com/' target='_blank'>LET'S FIT SWOLE</a> utilizing git skills</li>
+              <li>
+                Managed source code versions and collaborated on projects using
+                Git for effective code tracking and version control.
+              </li>
+              <li> Integrated Git with CI/CD pipelines</li>
             </div>
           </div>
 
