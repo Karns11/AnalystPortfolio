@@ -39,7 +39,7 @@ const Experience = ({ darkMode }) => {
               scalability and efficiency in mind.
             </li>
             <li className="mb-2">
-              Exhibited exceptional communication and data storytellingskills
+              Exhibited exceptional communication and data storytelling skills
               through frequent and impactful intra-department interactions,
               adeptly conveying insights and findings utilizing powerful data
               visualization tools like Power BI.
