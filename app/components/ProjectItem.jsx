@@ -12,6 +12,7 @@ const ProjectItem = ({
   return (
     <Link href={projectUrl}>
       <div
+        style={{ height: "100%", width: "100%", objectFit: "cover" }}
         className={
           darkMode
             ? "rounded-xl relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounde-xl p-4 group hover:bg-gradient-to-r from-[#379237] to-[#54B435] bg-[#fff]"
@@ -22,6 +23,7 @@ const ProjectItem = ({
           className="group-hover:opacity-10"
           src={backgroundImage}
           alt={title}
+          style={{ height: "75%", width: "95%", objectFit: "cover" }}
         />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <h3 className="pb-4 text-2xl text-white tracking-wider text-center">

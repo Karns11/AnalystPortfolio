@@ -7,10 +7,11 @@ import ERViz from "@public/assets/projects/ERViz.png";
 import SoccerViz from "@public/assets/projects/SoccerViz.png";
 import excelbikeproj from "@public/assets/projects/excelbikeproj.png";
 import salesData2 from "@public/assets/projects/dataanalysispic2.jpeg";
-import nbalogodrawing from "@public/assets/projects/nbalogodrawing.jpg";
+import nbalogodrawing from "@public/assets/projects/nbar.png";
 import mlb from "@public/assets/projects/mlb.jpg";
 import mlb5 from "@public/assets/projects/mlb5.jpg";
 import titanic from "@public/assets/projects/titanic.jpg";
+import MagePipeline from "@public/assets/projects/Mage pipeline structure SS2.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = ({ darkMode }) => {
@@ -24,6 +25,14 @@ const Projects = ({ darkMode }) => {
           What I've Built
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
+          <ProjectItem
+            darkMode={darkMode}
+            title="NFL Data Pipeline"
+            backgroundImage={MagePipeline}
+            projectUrl="/nfldatapipeline"
+            stack="Python, GCP, MAGE, R, Biquery"
+          />
+
           <ProjectItem
             darkMode={darkMode}
             title="NBA PLAYER PTS REGRESSION MODEL"
@@ -81,13 +90,13 @@ const Projects = ({ darkMode }) => {
             projectUrl="/nbaapp"
             stack="REACT"
           />
-          <ProjectItem
+          {/* <ProjectItem
             darkMode={darkMode}
             title="EXCEL BIKE DATA DASHBOARD"
             backgroundImage={excelbikeproj}
             projectUrl="/bikedataproject"
             stack="EXCEL"
-          />
+          /> */}
         </div>
       </div>
     </div>
