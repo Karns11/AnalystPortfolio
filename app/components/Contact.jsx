@@ -97,6 +97,7 @@ const Contact = ({ darkMode }) => {
                     id="name"
                     type="text"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    placeholder="John Doe..."
                   />
                 </div>
 
@@ -109,6 +110,7 @@ const Contact = ({ darkMode }) => {
                     name="user_email"
                     id="email"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    placeholder="JohnDoe@example.com"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -120,6 +122,7 @@ const Contact = ({ darkMode }) => {
                     name="subject"
                     id="subject"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    placeholder="AMAZING PORTFOLIO"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -131,6 +134,7 @@ const Contact = ({ darkMode }) => {
                     name="message"
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
+                    placeholder="I love your work..."
                   />
                 </div>
                 <button
