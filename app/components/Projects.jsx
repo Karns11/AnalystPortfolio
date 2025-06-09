@@ -1,7 +1,8 @@
 import React from "react";
 import nbapredictor from "@public/assets/projects/NBAPredictor.png";
 import nbapredictor2 from "@public/assets/projects/NBAPredictor2.jpeg";
-import nba1 from "@public/assets/projects/nba1.jpg";
+// import nba1 from "@public/assets/projects/nba1.jpg";
+import nba2 from "@public/assets/projects/nba2.png";
 import nbaImg from "@public/assets/projects/nbamarkup.png";
 import ERViz from "@public/assets/projects/ERViz.png";
 import SoccerViz from "@public/assets/projects/SoccerViz.png";
@@ -9,7 +10,8 @@ import excelbikeproj from "@public/assets/projects/excelbikeproj.png";
 import salesData2 from "@public/assets/projects/dataanalysispic2.jpeg";
 import nbalogodrawing from "@public/assets/projects/nbar.png";
 import mlb from "@public/assets/projects/mlb.jpg";
-import mlb5 from "@public/assets/projects/mlb5.jpg";
+// import mlb5 from "@public/assets/projects/mlb5.jpg";
+import mlb6 from "@public/assets/projects/mlb6.png";
 import titanic from "@public/assets/projects/titanic.jpg";
 import MagePipeline from "@public/assets/projects/Mage pipeline structure SS2.png";
 import ProjectItem from "./ProjectItem";
@@ -43,7 +45,7 @@ const Projects = ({ darkMode }) => {
           <ProjectItem
             darkMode={darkMode}
             title="MLB PLAYERS HITS AND HRS REGRESSION MODEL"
-            backgroundImage={mlb5}
+            backgroundImage={mlb6}
             projectUrl="https://www.kaggle.com/code/nathankarns/mlb-players-hits-and-home-runs-regression-model/notebook"
             stack="R"
           />
@@ -64,11 +66,11 @@ const Projects = ({ darkMode }) => {
           <ProjectItem
             darkMode={darkMode}
             title="NBA GAME PREDICTOR REGRESSION MODEL"
-            backgroundImage={nba1}
+            backgroundImage={nba2}
             projectUrl="/nbapredictor"
             stack="PYTHON"
           />
-          <ProjectItem
+          {/* <ProjectItem
             darkMode={darkMode}
             title="EMERGENCY ROOM DASHBOARD"
             backgroundImage={ERViz}
@@ -89,7 +91,7 @@ const Projects = ({ darkMode }) => {
             backgroundImage={nbaImg}
             projectUrl="/nbaapp"
             stack="REACT"
-          />
+          /> */}
           {/* <ProjectItem
             darkMode={darkMode}
             title="EXCEL BIKE DATA DASHBOARD"
