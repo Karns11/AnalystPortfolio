@@ -46,10 +46,16 @@ const Main = ({ darkMode }) => {
                 : "py-4 text-gray-600 max-w-[70%] m-auto"
             }
           >
-            I recently earned a degree from Michigan State University and am
+            {/* I recently earned a degree from Michigan State University and am
             currently channeling my profound passion for analytics in my role as
             an Associate Analyst, Advanced Analytics at Partners Federal Credit
-            Union—a part of The Walt Disney Company.
+            Union—a part of The Walt Disney Company. */}
+            I’m a data professional with a passion for turning raw information
+            into actionable insights. In my current role at Partners Federal
+            Credit Union, part of The Walt Disney Company, I design and maintain
+            efficient data pipelines, develop robust analytical models, and help
+            transform complex data into meaningful strategies that support key
+            business decisions.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link href="https://www.linkedin.com/in/nathan-karns-63820a216/">
