@@ -14,6 +14,7 @@ import mlb from "@public/assets/projects/mlb.jpg";
 import mlb6 from "@public/assets/projects/mlb6.png";
 import mlbpipeline from "@public/assets/projects/mlb data pipeline.png";
 import titanic from "@public/assets/projects/titanic.jpg";
+import titanic3 from "@public/assets/projects/titanic3.png";
 import MagePipeline from "@public/assets/projects/Mage pipeline structure SS2.png";
 import ProjectItem from "./ProjectItem";
 
@@ -77,7 +78,7 @@ const Projects = ({ darkMode }) => {
           <ProjectItem
             darkMode={darkMode}
             title="TITANIC SURVIVAL PREDICTIONS REGRESSION MODEL"
-            backgroundImage={titanic}
+            backgroundImage={titanic3}
             projectUrl="https://www.kaggle.com/code/nathankarns/titanic-predictions"
             stack="R"
           />
