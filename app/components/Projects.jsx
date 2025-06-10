@@ -12,6 +12,7 @@ import nbalogodrawing from "@public/assets/projects/nbar.png";
 import mlb from "@public/assets/projects/mlb.jpg";
 // import mlb5 from "@public/assets/projects/mlb5.jpg";
 import mlb6 from "@public/assets/projects/mlb6.png";
+import mlbpipeline from "@public/assets/projects/mlb data pipeline.png";
 import titanic from "@public/assets/projects/titanic.jpg";
 import MagePipeline from "@public/assets/projects/Mage pipeline structure SS2.png";
 import ProjectItem from "./ProjectItem";
@@ -29,19 +30,28 @@ const Projects = ({ darkMode }) => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             darkMode={darkMode}
-            title="NFL Data Pipeline"
-            backgroundImage={MagePipeline}
-            projectUrl="/nfldatapipeline"
-            stack="Python, GCP, MAGE, R, Biquery"
+            title="MLB Data Warehouse Data Pipeline"
+            backgroundImage={mlbpipeline}
+            projectUrl="/mlbdatapipeline"
+            stack="Python, Postgres, Airflow, R, Docker"
           />
 
           <ProjectItem
             darkMode={darkMode}
-            title="NBA PLAYER PTS REGRESSION MODEL"
-            backgroundImage={nbalogodrawing}
-            projectUrl="https://www.kaggle.com/code/nathankarns/nba-pts-model/notebook"
-            stack="R"
+            title="NFL Data Pipeline"
+            backgroundImage={MagePipeline}
+            projectUrl="/nfldatapipeline"
+            stack="Python, GCP, MAGE, R, Biquery, Docker"
           />
+
+          <ProjectItem
+            darkMode={darkMode}
+            title="NBA GAME PREDICTOR REGRESSION MODEL"
+            backgroundImage={nba2}
+            projectUrl="/nbapredictor"
+            stack="PYTHON"
+          />
+
           <ProjectItem
             darkMode={darkMode}
             title="MLB PLAYERS HITS AND HRS REGRESSION MODEL"
@@ -56,6 +66,14 @@ const Projects = ({ darkMode }) => {
             projectUrl="/salesdataanalysis"
             stack="PYTHON"
           /> */}
+
+          <ProjectItem
+            darkMode={darkMode}
+            title="NBA PLAYER PTS REGRESSION MODEL"
+            backgroundImage={nbalogodrawing}
+            projectUrl="https://www.kaggle.com/code/nathankarns/nba-pts-model/notebook"
+            stack="R"
+          />
           <ProjectItem
             darkMode={darkMode}
             title="TITANIC SURVIVAL PREDICTIONS REGRESSION MODEL"
@@ -63,13 +81,7 @@ const Projects = ({ darkMode }) => {
             projectUrl="https://www.kaggle.com/code/nathankarns/titanic-predictions"
             stack="R"
           />
-          <ProjectItem
-            darkMode={darkMode}
-            title="NBA GAME PREDICTOR REGRESSION MODEL"
-            backgroundImage={nba2}
-            projectUrl="/nbapredictor"
-            stack="PYTHON"
-          />
+
           {/* <ProjectItem
             darkMode={darkMode}
             title="EMERGENCY ROOM DASHBOARD"
