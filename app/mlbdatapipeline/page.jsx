@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import excelbikeproj from "@public/assets/projects/excelbikeproj.png";
 import MLBFactTable from "@public/assets/projects/MLBFactTable.png";
+import DWDiagram from "@public/assets/projects/DWDiagram.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -35,295 +36,151 @@ const property = () => {
           <p>
             This project showcases a fully automated data pipeline built with
             Docker and Apache Airflow, designed to ingest and transform MLB data
-            on a daily schedule. The pipeline leverages an R script powered by
-            the baseballr library to extract comprehensive play-by-play, team,
-            and player data. Once ingested, the data is loaded into a PostgreSQL
-            database, where a combination of SQL and dbt is used to perform
-            robust transformations. The end result is a well-structured
-            Kimball-style data warehouse, complete with conformed fact and
-            dimension tables that support advanced baseball analytics and
-            reporting. This project highlights my ability to orchestrate complex
-            workflows, integrate multiple technologies, and apply best practices
-            in modern data engineering. Let’s walk through how I developed this
-            project, step by step.
-          </p>
-          {/* <p className="mt-4">
-            Next, I will just initialize some contants that will be helpful for
-            later on in the process. The year will be plugged into the url so
-            that the url can be dynamic, and then the total_stats and dates
-            varibles will be empty lists that we will be adding data into once
-            we make our requests.
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Next, I want to initalize the first url that we will be scraping. I
-            am going to use data from the 2022-2023 season from October to
-            December. However, it will be set up so that I can add more months
-            to this process in the future if I want to. <br /> <br /> Also, here
-            we will initalize our response and soup variables. At this moment,
-            if we were to print the soup variable, we will get back the entire
-            html code for the webpage, so we are right on track.
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Now, Let's grab the headers from the table. I am using
-            soup.find_all('tr') in order to get all tr tags and then I loop
-            through those in order to get the th tags which is where the headers
-            are going to be. Then we assign that list to a variable called
-            the_headers. I will rename some for consitency.
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Okay, now we will start getting a little more messy. First we will
-            use some advanced list comprehension methods in order to get the
-            dates of each game. <br /> <br /> The code is iterating over each
-            table row (tr tag) in the_tr_tags and finding all the links (a tags)
-            within each row. It then collects the text content of each link and
-            stores it in a nested list called date, with each inner list
-            representing the links found within a specific table row. <br />{" "}
-            <br />
-            Next, the code is looping through all the tr tags once again but is
-            skipping the 0 index which contains the headers. This is an attempt
-            to get all of the necessary data that is stored in td tags. This
-            block of code does pretty much the same thing as above, but gets the
-            data and stores that in a variable called oct_results.
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            I am now going to repeat this process for both November and
-            December. Both times I am going to append that months stats to the
-            total_stats variable.
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Now I have pretty much everything I need to create the first df that
-            will contain the raw scores. I will assign the columns to be the
-            the_headers variable I created earlier and also add the date
-            variable at the start of the df. Additionally, I really only need
-            the headers to be 'Date', 'Visitor/N', 'Visitor PTS', 'Home/N', and
-            'Home PTS' so I will restrict the df to only show that data. Then
-            lastly, I will rename the column headers to clean it up a bit. This
-            is exactly what it should look like.
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Next, I need to get the team stats per game in order to make the
-            model more accurate. These stats will include things like fg%, ft%,
-            3pt%, ast, stl, and a whole lot more. For this, we need to use a new
-            url so we will reininitalize our response variable as well as our
-            soup variable. I will then look through all the tr tags and grab the
-            th tags that are in the 72nd index because that index contains the
-            table that we want. We dont want the headers so we will skip the 0
-            index by saying total_stats = total_stats[1:]. I will do the same
-            process for both the total stats and per 100 game stats which are
-            tables on the same url web page. I may or may not use these two
-            varibles later on. <br /> <br />
-            Next, I need to get the name of each team and put that at the 0
-            index of each list so that it looks the the_data variable looks
-            something like this [[team, stat1, stat2, ...] [team, stat1,
-            stat2,...]...]. After I did this, I realized that some of the team
-            names had a random '*' at the end. So, I had to make a new varible
-            called clean_data and loop through the list I just created and use
-            rstrip to remove that '*' from the end and then append the new team
-            list to the clean_data variable. <br /> <br />
-            Now, I have what I need to create a 2023 team per game stats df.
-          </p>
-
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">Here is what that should look like:</p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Next, I want to know what each teams opposing team stats are per
-            game. Basically, I want to know how good or bad each team is
-            defensively. Here, I will basicall do the same thing I just did to
-            create an opposing teams stats df. I will have to clean the data
-            just like above because I will still getting that random annoying
-            '*' at the end of some team names.
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">Here is what that should look like:</p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Now, it is time to combine the previous two df's into one big df.
-            This will easily show us all the relevant stats per team. This is
-            what it should look like:
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Finally, the last thing we need to do before predictions, is to
-            combine the big df we just made with the game results df. This will
-            give us the scores for each game as well as the teams that played
-            and the stats going into each game for each team. Here is how I did
-            that:
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">Here's what that df looks like:</p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-
-          <p className="mt-4">
-            Next, lets import what we need to conduct linear regression and see
-            how well this model fits our data. Here, I will create the train and
-            test variables that will be used with other models as well.
-          </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
-          <p className="mt-4">
-            This gives us a really bad score so let's move onto a different
-            model.
+            on a daily schedule. The pipeline itself runs daily on my Raspberry
+            Pi 5, it leverages an R script powered by the baseballr library to
+            extract comprehensive play-by-play, team, and player data. Once
+            ingested, the data is loaded into a PostgreSQL database, where a
+            combination of SQL and dbt is used to perform robust
+            transformations. The end result is a well-structured Kimball-style
+            data warehouse, complete with conformed fact and dimension tables
+            that support advanced baseball analytics and reporting. This project
+            highlights my ability to orchestrate complex workflows, integrate
+            multiple technologies, and apply best practices in modern data
+            engineering. Let’s walk through how I developed this project and
+            deployed it to my Raspberry Pi.
           </p>
           <p className="mt-4">
-            I will speed this us and just tell you that I found the SVC model to
-            be the best. Here is how I found that out:
-            <br /> <br /> Although .60 isn't the best score, it is good enough
-            for me to use for this analysis.
+            First and foremost, this tutorial will focus on the steps I took to
+            deploy the project to my Raspberri Pi, rather than the development
+            of the pipeline itself. The steps I took to develop the pipeline
+            itself can be found in the README file in the github repository for
+            this project, located here:{" "}
+            <a
+              href="https://github.com/Karns11/MLB-Data-Warehouse-Pipeline--Raspberry-Pi"
+              target="_blank"
+              style={{ textDecoration: "underline", color: "blue" }}
+            >
+              MLB-Data-Warehouse-Pipeline--Raspberry-Pi.
+            </a>
           </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
           <p className="mt-4">
-            Next, I wanted to find the mean sqaured error for this model in
-            order to see how accurate it is. The lower the score the better, so
-            0.24 is going to be acceptable for this project.
+            Alright, let's get started. The first thing I did was unbox and
+            setup my Raspberry Pi. I purchased the{" "}
+            <a
+              href="https://www.amazon.com/CanaKit-Raspberry-Starter-Kit-PRO/dp/B0CRSNCJ6Y/?_encoding=UTF8&ref_=pd_hp_d_atf_ci_mcx_mr_ca_hp_atf_d"
+              target="_blank"
+              style={{ textDecoration: "underline", color: "blue" }}
+            >
+              CanaKit Raspberry Pi Starter Kit from Amazon
+            </a>
+            , and that came with everything I needed to get started. After
+            putting all of the hardware together, the first step was to plug in
+            a keyboard, mouse and hdmi into the pi. After turning it on, running
+            the setup wizard, and applying updates, I updated the system and
+            installed docker and docker compose with the following commands:
+            <br></br> <br></br> sudo apt update && sudo apt upgrade -y<br></br>
+            curl -sSL https://get.docker.com | sh <br></br>
+            sudo usermod -aG docker $USER <br></br>newgrp docker
+            <br></br>sudo apt-get update<br></br> sudo apt-get install
+            libffi-dev libssl-dev <br></br> sudo apt install python3-dev
+            python3-pip <br></br> sudo pip3 install docker-compose
           </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
+          <p className="mt-4">
+            Next, also on the pi itself, run the following command to allow ssh:{" "}
+            <br></br>
+            <br></br> sudo raspi-config <br></br># Go to: Interface Options,
+            then SSH, then Enable <br></br> <br></br> Then, run the following
+            command to obtain the hostname of the pi: <br></br> <br></br>{" "}
+            hostname -I
+          </p>
+          <p className="mt-4">
+            Now, create a project directory and clone the following github repo
+            in that directory: <br></br>{" "}
+            https://github.com/Karns11/MLB-Data-Warehouse-Pipeline--Raspberry-Pi
+          </p>
+          <p className="mt-4">
+            After cloning the repo, you will need to create a couple folders and
+            files in the same directory that were not pushed to guthub. So, run
+            the following commands: <br></br> <br></br> mkdir dags logs plugins
+            config project-db-data-postgres15 project-db-data <br></br> touch
+            .env <br></br> mkdir dbt/dbt_packages dbt/target dbt/logs
+          </p>
+          <p className="mt-4">
+            Once that is complete, add the following env variables to the .emv
+            file, the values can be whatever values your heart desires:{" "}
+            <br></br> AIRFLOW_UID
+            <br></br> MY_PG_USER
+            <br></br> MY_PG_PASSWORD
+            <br></br> MY_PG_DB
+            <br></br> MY_PG_HOST
+            <br></br> MY_PG_PORT
+            <br></br> _AIRFLOW_WWW_USER_USERNAME
+            <br></br> _AIRFLOW_WWW_USER_PASSWORD
+          </p>
 
           <p className="mt-4">
-            Next, I wanted to actually look at the games it predicted and see
-            how many it got correct. I will create a quick comparison df for
-            this.
+            At this point, you have everything you need in order to run:{" "}
+            <br></br> docker compose build <br></br> docker compose up
+            airflow-init <br></br> docker compose up <br></br> <br></br> This
+            will start up your airlfow ui and postgres db. In order to connect
+            to the postgres db, you should install pgadmin, then register a new
+            server. In the input fields, create a name for the server, then
+            enter the Raspberry Pi's host name for the host name field (which
+            you obtained earlier), and then enter the user name and password
+            that you entered in the .env file. Boom! Now you should be able to
+            see the database you defined the .env file as well!
           </p>
-          <Image
-            className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
-            height={500}
-            src={MLBFactTable}
-            alt="/"
-          />
+          <p className="mt-4">
+            Next, navigate over to: localhost:8080 or pihostname:8080 in order
+            to access the airflow ui. You should be able to login to the website
+            with the values you entered for these vairables:
+            _AIRFLOW_WWW_USER_USERNAME & _AIRFLOW_WWW_USER_PASSWORD. Once you
+            login you should see the "run r script daily" dag. You can now turn
+            it on and trigger it if you'd like.
+          </p>
 
           <p className="mt-4">
-            This is kind of hard to see, so I will run an analysis on this df
-            and come up with an overall % correct. Here is how I did that:
+            By default, once turned on, (and this can be changed in the
+            "run_r_script_dag.py" file) the dag will run daily at 10am est to
+            obtain yesterdays play-by-play data. If you want to change this
+            behavior and backfill, you must change the BACKFILL_FLAG variable to
+            1, and enter in the dates you would like to run the process for
+            (Skip days that didn't have any MLB games).
           </p>
+
+          <p className="mt-4">
+            Lastly, and this is optional, we can set up a cloudflare tunnel to
+            make sure the airflow UI can be accessed anywhere at anytime (not
+            just using the Pi's host name on the local network). To do this
+            follow these steps: <br></br> <br></br>Google search cloudflare
+            tunnels, Then create an account, then add a tunnel, then copy and
+            paste the provided code, add a domain name (might have to purchase
+            one, I did), add http:localhost:8080, and you should be good to go!
+          </p>
+
+          <p className="mt-4">
+            That is all! Now, just leave your Raspberry Pi on at all times and
+            you will be able to access the db and airlfow ui whenever you need!
+            You can also ssh into the pi with VScode with the remote - ssh
+            extension on your desktop and edit the files on your pi, then save
+            them and push to the github repo whenever you like. <br></br> I hope
+            this very high-level overview was helpful. If you have any
+            questions, feel free to email me or message me on linked, both are
+            linked here on my portfolio website!
+          </p>
+
+          <p className="mt-4">
+            Lastly, here is a diagram of the data warehouse that is created with
+            this code. Hope you enjoy!
+          </p>
+
           <Image
             className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
             width={800}
             height={500}
-            src={MLBFactTable}
+            src={DWDiagram}
             alt="/"
           />
-          <p className="mt-4">
-            This shows us that the model has greater than a 63% success rate!
-            This is honestly really good in my opinion because this is the first
-            model I have ever created. I expect that this model will be even
-            more accurate once I include data from the remainder of the season,
-            after december. <br /> <br /> All in all, I think this project was a
-            success.
-          </p> */}
 
           <a
             href="https://github.com/Karns11/MLB-Data-Warehouse-Pipeline"
