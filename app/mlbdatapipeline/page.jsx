@@ -183,7 +183,7 @@ const property = () => {
           />
 
           <a
-            href="https://github.com/Karns11/MLB-Data-Warehouse-Pipeline"
+            href="https://github.com/Karns11/MLB-Data-Warehouse-Pipeline--Raspberry-Pi"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center pt-4"
