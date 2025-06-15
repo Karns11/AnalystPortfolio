@@ -172,7 +172,7 @@ const Experience = ({ darkMode }) => {
               <li className="mb-2">
                 Led the development of ML models to predict the type of credit
                 card a member will sign up for based on various demographic
-                attributes. Leading to a 95% accuracy.
+                attributes, significantly improving predictive accuracy.
               </li>
               <li className="mb-2">
                 Successfully led the migration of various data pipelines built
