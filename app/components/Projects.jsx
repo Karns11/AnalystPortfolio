@@ -12,6 +12,7 @@ import nbalogodrawing from "@public/assets/projects/nbar.png";
 import mlb from "@public/assets/projects/mlb.jpg";
 // import mlb5 from "@public/assets/projects/mlb5.jpg";
 import mlb6 from "@public/assets/projects/mlb6.png";
+import N8AI from "@public/assets/projects/N8AIChatBot.png";
 import mlbpipeline from "@public/assets/projects/mlb data pipeline.png";
 import titanic from "@public/assets/projects/titanic.jpg";
 import titanic3 from "@public/assets/projects/titanic3.png";
@@ -29,6 +30,13 @@ const Projects = ({ darkMode }) => {
           What I've Built
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
+          <ProjectItem
+            darkMode={darkMode}
+            title="N8AI SQL Chat Bot"
+            backgroundImage={N8AI}
+            projectUrl="/n8aichatbot"
+            stack="Django, OpenAI, JavaScript, SQL, Python"
+          />
           <ProjectItem
             darkMode={darkMode}
             title="MLB Data Warehouse Data Pipeline"
