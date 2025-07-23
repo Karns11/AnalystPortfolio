@@ -17,6 +17,7 @@ import mlbpipeline from "@public/assets/projects/mlb data pipeline.png";
 import titanic from "@public/assets/projects/titanic.jpg";
 import titanic3 from "@public/assets/projects/titanic3.png";
 import MagePipeline from "@public/assets/projects/Mage pipeline structure SS2.png";
+import chatbotthumbnail from "@public/assets/projects/chatbotthumbnail.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = ({ darkMode }) => {
@@ -33,7 +34,7 @@ const Projects = ({ darkMode }) => {
           <ProjectItem
             darkMode={darkMode}
             title="N8AI SQL Chat Bot"
-            backgroundImage={N8AI}
+            backgroundImage={chatbotthumbnail}
             projectUrl="/n8aichatbot"
             stack="Django, OpenAI, JavaScript, SQL, Python"
           />
