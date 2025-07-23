@@ -110,7 +110,7 @@ const property = () => {
 
           <Image
             className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
+            width={1000}
             height={500}
             src={N8AI2}
             alt="/"
@@ -118,7 +118,7 @@ const property = () => {
 
           <Image
             className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
+            width={1000}
             height={500}
             src={N8AI3}
             alt="/"
@@ -126,7 +126,7 @@ const property = () => {
 
           <Image
             className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
+            width={1000}
             height={500}
             src={N8AI4}
             alt="/"
@@ -134,7 +134,7 @@ const property = () => {
 
           <Image
             className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
+            width={1000}
             height={500}
             src={N8AI5}
             alt="/"
@@ -142,7 +142,7 @@ const property = () => {
 
           <Image
             className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
+            width={1000}
             height={500}
             src={N8AI6}
             alt="/"
@@ -150,7 +150,7 @@ const property = () => {
 
           <Image
             className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
+            width={1000}
             height={500}
             src={N8AI7}
             alt="/"
@@ -158,7 +158,7 @@ const property = () => {
 
           <Image
             className="hover:scale-105 ease-in duration-300 shadow-lg shadow-gray-400 mt-4"
-            width={800}
+            width={1000}
             height={500}
             src={N8AI8}
             alt="/"
