@@ -24,8 +24,8 @@ const Main = ({ darkMode }) => {
       id="home"
       className={
         darkMode
-          ? "w-full h-screen text-center bg-black"
-          : "w-full h-screen text-center"
+          ? "w-full h-screen text-center bg-black pt-20"
+          : "w-full h-screen text-center pt-20"
       }
     >
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
@@ -50,7 +50,7 @@ const Main = ({ darkMode }) => {
             currently channeling my profound passion for analytics in my role as
             an Associate Analyst, Advanced Analytics at Partners Federal Credit
             Union—a part of The Walt Disney Company. */}
-            I’m a data professional with a passion for turning raw information
+            I'm a data professional with a passion for turning raw information
             into actionable insights. In my current role at Partners Federal
             Credit Union, part of The Walt Disney Company, I design and maintain
             efficient data pipelines, develop robust analytical models, and help
