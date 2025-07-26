@@ -24,8 +24,8 @@ const Main = ({ darkMode }) => {
       id="home"
       className={
         darkMode
-          ? "w-full h-screen text-center bg-black pt-20"
-          : "w-full h-screen text-center pt-20"
+          ? "w-full h-screen text-center bg-black pt-40 md:pt-20"
+          : "w-full h-screen text-center pt-40 md:pt-20"
       }
     >
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
